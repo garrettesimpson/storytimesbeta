@@ -1,0 +1,67 @@
+@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css);
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    ),
+    url("Assets/Background.png");
+  background-size:cover;
+  font-family:"Fira Code";
+  font-weight:600;
+}
+
+main {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.links ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.links li {
+  position:relative;
+  display:inline-block;
+  text-align:center;
+  margin-top:0;
+  margin-left:20px;
+}
+
+.links a {
+  color:#ddd;
+  text-decoration:none;
+  font-size:20px;
+  text-transform:uppercase;
+  transition:color ease 250ms;
+}
+
+.links a::before {
+  content:'';
+  display:block;
+  margin-top:20px;
+  height:3px;
+  width:0%;
+  background-color:#ddd;
+  position:absolute;
+  transition:all ease-in-out 250ms;
+}
+
+.links a:hover {
+  color:#fff;
+}
+
+.links a:hover::before {
+  width:100%;
+  background-color:#fff;
+}
