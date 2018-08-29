@@ -13,8 +13,10 @@ body {
     ),
     url("Assets/Background.png");
   background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
   font-family:"Fira Code";
-  font-weight:600;
+  font-weight:400;
 }
 
 main {
